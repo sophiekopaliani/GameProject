@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <script  src="letters.js"></script>
+  <script type="text/javascript" src="dictionary.js"></script>
+  
+</head>
+<body>
+
+<!-- <a href="#main-page2" onclick="displayCards('table-cards',cards);">aaaas</a> -->
+  <!-- TO DO change 'sound on' to element -->
+  <div id = "soundOnOff">
+    <input type="checkbox" name = "sound" value = "on" > 
+    <p>Sound On</p>
+  </div>
+
+  <div class ="main-page" id="main-page1">
+    <div class = "container">
+      <div class="buutton1 button">
+        <a href='#main-page2' id="offline-mode-text"> Offline Mode<a/>
+        <p id = "dificulty-text"> Dificulty</p>
+        <form action = "" id="dificulty">
+          <input type = "range" name=  "dificulty" min="0" max="100" id="Range-ID">
+        </form>
+      </div>
+      <div class="button2 button">
+        <p id="online-mode-text">Online mode</p>
+      </div>
+   </div>
+  </div>
+
+  <div class = main-page id="main-page2">
+    <div class ="everything">
+    <div class = "results">
+      <div class= "names-for-results">
+        <p>player1:</p>
+        <p>player2:</p>
+      </div>
+      <div class= "result-scores">
+        <p class="result"></p>
+        <p class="result"></p>
+      </div>
+    </div>
+      <div class =  "enemy2" id='player2'>
+      <!-- TO DO Player 2 label move -->
+        <!-- <p> player 2</p> -->
+        
+
+        <div class="card">
+          <p class="text-in-card">.</p>
+          <p class="text-in-card">.</p>
+        </div>
+        <div class="card">
+          <p class="text-in-card">.</p>
+          <p class="text-in-card">.</p>
+        </div>
+      </div>
+    <div class = "second-row">  
+      <div class =  "enemy1 online-mode">
+        <p> player 1</p>
+        <div class="card">
+        </div>
+        <div class="card">
+        </div>
+      </div>
+      <div id='table-cards' class = "table-cards">
+
+        <div class="card table-card choosable_card">
+          <p class="text-in-card other">a</p>
+          <p class="text-in-card">5</p>
+        </div>
+
+        <div class="card table-card choosable_card">
+          <p class="text-in-card">a</p>
+          <p class="text-in-card">5</p>
+        </div>
+
+        <div class="card table-card choosable_card">
+         <p class="text-in-card">a</p>
+         <p class="text-in-card">5</p>
+        </div>
+
+        <div class="card table-card choosable_card">
+          <p class="text-in-card">a</p>
+          <p class="text-in-card">5</p>
+        </div>
+
+        <div class="card table-card choosable_card">
+          <p class="text-in-card">a</p>
+          <p class="text-in-card">5</p>
+        </div>
+
+        <div class="card table-card choosable_card">
+          <p class="text-in-card">a</p>
+          <p class="text-in-card">5</p>
+        </div>
+
+        <div class="card table-card choosable_card">
+          <p class="text-in-card">a</p>
+          <p class="text-in-card">5</p>
+        </div>
+      </div>
+    
+      <div class = "enemy3 online-mode">
+        <p> player 3 </p>
+        <div class="card">
+        </div>
+        <div class="card">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="letter-boxes">
+      <div class="letter-box">
+      <p class="letter-box-text"> </p>
+      </div>
+      <div class="letter-box">
+      <p class="letter-box-text"> </p>
+      </div>
+      <div class="letter-box">
+      <p class="letter-box-text"> </p>
+      </div>
+      <div class="letter-box">
+      <p class="letter-box-text"> </p>
+      </div>
+      <div class="letter-box">
+      <p class="letter-box-text"> </p>
+      </div>
+      <div class="letter-box">
+      <p class="letter-box-text"> </p>
+      </div>
+      <div class="letter-box">
+      <p class="letter-box-text"> </p>
+      </div>
+      <div class="letter-box">
+      <p class="letter-box-text"> </p>
+      </div>
+      <div class="letter-box">
+      <p class="letter-box-text"> </p>
+      </div> 
+
+      <div class = "form-buttons"> 
+        <button type="button" onclick="submitAnswer();"> ok
+        </button>
+        <button type="button"> clear
+        </button>
+        <button type="button" onclick="nextRoundStart();"> Next Round
+        </button>
+      </div>
+    </div>
+
+    <div class = "my-cards" id = "player1">
+      <div class="card my-card choosable_card" id="my-card1">
+        <p class="text-in-card">a</p>
+        <p class="text-in-card">5</p>
+      </div>
+
+      <div class="card my-card choosable_card" id = "my-card2">
+        <p class="text-in-card">a</p>
+        <p class="text-in-card">5</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
